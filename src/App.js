@@ -71,12 +71,18 @@
 
 
 import React, { useState } from 'react';
-import NeuralInputMonitor from './components/NeuralInputMonitor';
-import EmotionalStateMonitor from './components/EmotionalStateMonitor';
-import HapticFeedbackSimulator from './components/HapticFeedbackSimulator';
-import VRARInterface from './components/VRARInterface';
-import HealthMonitor from './components/HealthMonitor';
-import SettingsPanel from './components/SettingsPanel';
+import NeuralInputMonitor from './monitor-components/NeuralInputMonitor';
+import EmotionalStateMonitor from './monitor-components/EmotionalStateMonitor';
+import HapticFeedbackSimulator from './monitor-components/HapticFeedbackSimulator';
+import VRARInterface from './monitor-components/VRARInterface';
+import HealthMonitor from './monitor-components/HealthMonitor';
+import SettingsPanel from './monitor-components/SettingsPanel';
+import Navigation from './game-components/Navigation';
+import CharacterStatus from './game-components/CharacterStatus';
+import QuestLog from './game-components/QuestLog';
+import Inventory from './game-components/Inventory';
+import MiniMap from './game-components/MiniMap';
+import DialogueBox from './game-components/DialogueBox';
 
 export default function App() {
   // 设置状态
@@ -107,13 +113,28 @@ export default function App() {
           {/* 传递设置到各个组件 */}
           <div style={{ fontSize: settings.fontSize }}>
             <NeuralInputMonitor />
+            <br />
             <EmotionalStateMonitor />
+            <br />
             <HapticFeedbackSimulator />
+            <br />
             <VRARInterface />
+            <br />
             <HealthMonitor />
           </div>
-          {/* 将设置面板传递到 SettingsPanel 组件 */}
           <SettingsPanel onSettingsChange={handleSettingsChange} />
+          <br />
+          <Navigation />
+          <br />
+          <CharacterStatus />
+          <br />
+          <QuestLog />
+          <br />
+          <Inventory />
+          <br />
+          <MiniMap />
+          <br />
+          <DialogueBox />
         </div>
       </div>
     </div>

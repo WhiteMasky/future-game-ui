@@ -74,7 +74,7 @@ import React, { useState } from 'react';
 import NeuralInputMonitor from './components/NeuralInputMonitor';
 import EmotionalStateMonitor from './components/EmotionalStateMonitor';
 import HapticFeedbackSimulator from './components/HapticFeedbackSimulator';
-import VRInterface from './components/VRInterface';
+import VRARInterface from './components/VRARInterface';
 import HealthMonitor from './components/HealthMonitor';
 import SettingsPanel from './components/SettingsPanel';
 
@@ -109,7 +109,7 @@ export default function App() {
             <NeuralInputMonitor />
             <EmotionalStateMonitor />
             <HapticFeedbackSimulator />
-            <VRInterface />
+            <VRARInterface />
             <HealthMonitor />
           </div>
           {/* 将设置面板传递到 SettingsPanel 组件 */}

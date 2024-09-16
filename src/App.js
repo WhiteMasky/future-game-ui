@@ -24,12 +24,44 @@
 
 // export default App;
 
+
+
+// import React from 'react';
+
+// export default function App() {
+//   return (
+//     <h1 className="text-3xl font-bold underline">
+//       Hello world!
+//     </h1>
+
+//   )
+// }
+
 import React from 'react';
+
+import NeuralInputMonitor from './components/NeuralInputMonitor';
+// import EmotionalStateMonitor from './EmotionalStateMonitor';
+// import HapticFeedbackSimulator from './HapticFeedbackSimulator';
+// import VRInterface from './VRInterface';
+// import HealthMonitor from './HealthMonitor';
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+
+      <div className="p-6 bg-gray-100 min-h-screen">
+        <h1 className="text-3xl font-bold mb-6">Neural Interface Game Dashboard</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <NeuralInputMonitor />
+          {/* <EmotionalStateMonitor />
+          <HapticFeedbackSimulator />
+          <VRInterface />
+          <HealthMonitor /> */}
+        </div>
+      </div>
+    </div>
+  );
 }

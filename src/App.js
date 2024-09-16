@@ -41,7 +41,7 @@ import React from 'react';
 
 import NeuralInputMonitor from './components/NeuralInputMonitor';
 import EmotionalStateMonitor from './components/EmotionalStateMonitor';
-// import HapticFeedbackSimulator from './HapticFeedbackSimulator';
+import HapticFeedbackSimulator from './components/HapticFeedbackSimulator';
 // import VRInterface from './VRInterface';
 // import HealthMonitor from './HealthMonitor';
 
@@ -57,8 +57,8 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <NeuralInputMonitor />
           <EmotionalStateMonitor />
-          {/* <HapticFeedbackSimulator />
-          <VRInterface />
+          <HapticFeedbackSimulator />
+          {/* <VRInterface />
           <HealthMonitor /> */}
         </div>
       </div>
